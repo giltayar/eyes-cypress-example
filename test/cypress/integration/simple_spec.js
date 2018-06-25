@@ -8,7 +8,10 @@ describe('Blog App', function () {
     // Visit registration page
     cy.visit('http://localhost:3000/register')
 
-    cy.eyesOpen({appName: 'blog app', testName: 'blog app cypress', viewPortSize: {width: 1024, height: 768}, showLogs: true})
+    cy.eyesOpen({appName: 'blog app', testName: 'blog app cypress', viewportSize: [
+      // {width: 800, height: 600},
+      {width: 1024, height: 768}
+    ]})
 
     cy.eyesCheckWindow('register') // visual snapshot
 
