@@ -34,7 +34,7 @@
     "chai": "^4.1.2",
     "chai-image-assert": "^1.2.0",
     "chromedriver": "^2.40.0",
-    "conduit-node": "git+ssh://git@github.com/gothinkster/node-express-realworld-example-app.git#ba04b70",
+    "conduit-node": "https://github.com/gothinkster/node-express-realworld-example-app.git#ba04b70",
     "cross-env": "^5.2.0",
     "cypress": "^3.0.1",
     "eslint": "^4.2.0",
