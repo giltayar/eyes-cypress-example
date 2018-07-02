@@ -58,6 +58,7 @@
     "test": "npm run test:cypress && npm run eslint",
     "test:cypress": "docker-compose kill && docker-compose rm -fsv && docker-compose up -d && time cypress run ; docker-compose kill && docker-compose rm -fv",
     "cypress": "docker-compose kill && docker-compose rm -fsv && docker-compose up -d && cypress open ; docker-compose kill && docker-compose rm -fv",
+    "just-cypress": "cypress open",
     "eslint": "eslint"
   },
   "keywords": [],
