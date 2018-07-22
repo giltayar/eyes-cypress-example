@@ -3,15 +3,16 @@ const {describe, it} = require('mocha')
 
 describe('Blog App', function () {
   it('should do stuff', () => {
-    const random = '1' // `${Math.random() * 100000 | 0}`
-
-    // Visit registration page
-    cy.visit('http://localhost:3000/register')
+    const random = '1';`${Math.random() * 100000 | 0}`
 
     cy.eyesOpen({appName: 'blog app', testName: 'blog app cypress', viewportSize: [
       // {width: 800, height: 600},
       {width: 1024, height: 768}
     ]})
+
+
+    // Visit registration page
+    cy.visit('http://localhost:3000/register')
 
     cy.eyesCheckWindow('register') // visual snapshot
 
